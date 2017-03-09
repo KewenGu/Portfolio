@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Portfolio</title>
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/main.css">
+      <link href="https://fonts.googleapis.com/css?family=Lato:100,400" rel="stylesheet">
+      <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+      <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  </head>
+  <body>
+      <div class="container">
+          <header class="col-md-12">
+              <div class="row">
+                  <div class="col-md-6 logo">
+                      <img src="images/my_logo.svg" alt="My Logo">
+                  </div>
+                  <div class="col-md-6 text-right text-uppercase intro">
+                      <h1>Kewen Gu</h1>
+                      <h4>Full Stack Ninja</h4>
+                  </div>
+              </div>
+              <div class="row break">
+                  <div class="col-md-12 break-hr">
+                      <hr>
+                  </div>
+              </div>
+          </header>
+          <article class="col-md-12">
+              <section>
+                  <div class="row main-img">
+                      <div class="col-md-12">
+                          <picture>
+                              <source media="(min-width: 640px)" srcset="images/main-large.jpg">
+                              <img class="img-responsive" src="images/main-small.jpg" alt="Main Image" >
+                          </picture>
+                      </div>
+                  </div>
+              </section>
+              <section>
+                  <div class="row">
+                      <div class="section-header">
+                          <p>Featured Work</p>
+                      </div>
+                  </div>
+                  <div class="row work-portfolio">
+                      <div class="col-md-4 works">
+                          <picture>
+                              <source media="(min-width: 640px)" srcset="images/boston-large.jpg">
+                              <img class="img-responsive" src="images/boston-small.jpg" alt="First Image" data-toggle="modal" data-target="#project1">
+                          </picture>
+                          <div class="work-info">
+                              <h3 class="text-uppercase">Web Memo</h3>
+                              <div class="hyperlink">
+                                  <a href="https://github.com/KewenGu/WebProject" target="_blank">Click here to see it on GitHub</a>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-md-4 works">
+                          <picture>
+                              <source media="(min-width: 640px)" srcset="images/new-york-city-large.jpg">
+                              <img class="img-responsive" src="images/new-york-city-small.jpg" alt="Second Image" data-toggle="modal" data-target="#project1">
+                          </picture>
+                          <div class="work-info">
+                              <h3 class="text-uppercase">Path Finding</h3>
+                                <div class="hyperlink">
+                                    <a href="https://github.com/Team-Schadenfreude/WPI-Path-Finding-Project" target="_blank">Click here to see it on GitHub</a>
+                                </div>
+                          </div>
+                      </div>
+                      <div class="col-md-4 works">
+                          <picture>
+                              <source media="(min-width: 640px)" srcset="images/london-large.jpg">
+                              <img class="img-responsive" src="images/london-small.jpg" alt="Third Image" data-toggle="modal" data-target="#project1">
+                          </picture>
+                          <div class="work-info">
+                              <h3 class="text-uppercase">Scan It!</h3>
+                              <div class="hyperlink">
+                                  <a href="https://github.com/KewenGu/ScanIt" target="_blank">Click here to see it on GitHub</a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </section>
+          </article>
+      </div>
+      <!-- Modal -->
+      <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h4 class="modal-title" id="myModalLabel">Favorite App Page</h4>
+                  </div>
+                  <div class="modal-body">
+                      <picture>
+                          <source media="(min-width: 640px)" srcset="images/city-skyline-large.jpg">
+                          <img class="img-responsive" src="images/city-skyline-small.jpg" alt="App Image">
+                      </picture>
+                      These are the projects that I worked in teams for computer science courses at WPI
+                  </div>
+                  <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </body>
+</html>
